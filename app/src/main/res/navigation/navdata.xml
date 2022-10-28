@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navdata"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="project.rr.fb88appchnhthc.common.presentation.dashboard.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_slotMachineFragment"
+            app:destination="@id/slotMachineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/slotMachineFragment"
+        android:name="project.rr.fb88appchnhthc.slotmachine_features.presentation.SlotMachineFragment"
+        android:label="fragment_slot_machine"
+        tools:layout="@layout/fragment_slot_machine" >
+        <action
+            android:id="@+id/action_slotMachineFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_slotMachineFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_slotMachineFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webviewFragment"
+        android:name="project.rr.fb88appchnhthc.webview.presentation.WebviewFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" >
+        <action
+            android:id="@+id/action_webviewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_webviewFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_webviewFragment_to_slotMachineFragment"
+            app:destination="@id/slotMachineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="project.rr.fb88appchnhthc.privacy.presentation.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" >
+        <action
+            android:id="@+id/action_privacyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_privacyFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_privacyFragment_to_slotMachineFragment"
+            app:destination="@id/slotMachineFragment" />
+    </fragment>
+</navigation>

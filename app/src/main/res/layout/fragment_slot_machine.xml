@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".slotmachine_features.presentation.SlotMachineFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/home_tab_gradiant"
+            android:padding="20sp"
+            android:text="@string/score_text"
+            android:textColor="@color/White" />
+
+        <FrameLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="560dp"
+            android:layout_height="220dp"
+            android:layout_below="@+id/score_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/frame">
+
+            <LinearLayout
+                android:id="@+id/imagesLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                tools:ignore="UselessParent">
+
+                <project.rr.fb88appchnhthc.slotmachine_features.presentation.SlotScroll
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10sp" />
+
+                <project.rr.fb88appchnhthc.slotmachine_features.presentation.SlotScroll
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10sp" />
+
+                <project.rr.fb88appchnhthc.slotmachine_features.presentation.SlotScroll
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/leverUp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100sp"
+            android:layout_toEndOf="@+id/layout_bar"
+            android:contentDescription="@string/image"
+            android:src="@drawable/up" />
+
+        <ImageView
+            android:id="@+id/leverDown"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="120sp"
+            android:layout_toEndOf="@+id/layout_bar"
+            android:contentDescription="@string/image"
+            android:src="@drawable/down"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/pull_lever_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_bar"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/home_tab_gradiant"
+            android:padding="12dp"
+            android:text="@string/pull_the_lever_to_play"
+            android:textAlignment="center"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+</ScrollView>

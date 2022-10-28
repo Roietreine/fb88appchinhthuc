@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FB88 App Chính Thức</string>
+
+    <string name="score_text">My Score</string>
+    <string name="image">image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pull_the_lever_to_play">Bấm vào đòn bẩy để chơi</string>
+    <string name="mini_game">Trò chơi nhỏ</string>
+    <string name="website">Đăng Ký</string>
+    <string name="privacy_policy">Đăng nhập</string>
+    <string name="click_to_see_more">click to see more</string>
+
+
+</resources>
